@@ -1,0 +1,30 @@
+body {
+  background: linear-gradient(135deg, rgb(39, 37, 37) 50%, #ffffff 100%);
+  color: #0066cc; /* sapphire blue text */
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  text-shadow: none;
+}
+
+a, h2, h3, h4, h5, h6 {
+  color: whitesmoke; /* lighter sapphire blue for headings */
+}
+
+::selection {
+  background: rgba(0, 102, 204, 0.2);
+  color: #0066cc;
+}
+
+h1{
+  font-size: 3em;
+  margin-bottom: 0.5em;
+  text-decoration: dashed underline whitesmoke;
+  color: whitesmoke;
+} 
+
+.Ackn {
+  font-size: 20px;
+  color: tomato;
+  text-align: center;
+  margin-top: 20px;
+
+}

@@ -1,0 +1,462 @@
+body{
+  background: linear-gradient(to right, blue, tomato);
+}
+
+h1,h2{
+  color:aqua;
+
+}
+
+p{
+  color:aqua;
+}
+
+.container{
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
+}
+
+section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.I1, .I2, .I3, .I4, .I5, .I6, .I7, .I8, .I9, .I10{
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(45deg, #f0f0f0, #ffffff);
+  border-radius: 10%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  color: whitesmoke;
+  text-shadow: 0 0 5px currentColor;
+}
+
+.I1:hover, .I2:hover, .I3:hover, .I4:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.I1{
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  color: whitesmoke;
+  text-decoration: grey dotted underline;
+  background-size: cover;
+  background-repeat: no-repeat;
+  
+}
+
+.I1::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("I1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I1::after {
+  content: 'Space';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I1:hover::before {
+  filter: blur(5px);
+}
+
+.I1:hover::after {
+  opacity: 1;
+}
+
+.I1 a {
+  position: relative;
+  z-index: 2;
+}
+.I2{
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.I2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("I.2.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I2::after {
+  content: 'Oceans';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I2:hover::before {
+  filter: blur(5px);
+}
+
+.I2:hover::after {
+  opacity: 1;
+}
+
+.I3{
+  position: relative;
+  overflow: hidden;
+  align-content: center;
+  color: whitesmoke;
+  text-decoration: grey dotted underline;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.I3::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url(".");
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I3::after {
+  content: 'Desert';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I3:hover::before {
+  filter: blur(5px);
+}
+
+.I3:hover::after {
+  opacity: 1;
+}
+
+.I4 {
+  position: relative;
+  overflow: hidden;
+}
+
+.I4::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f0f0f0, #ffffff);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I4::after {
+  content: 'Tundra';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I4:hover::before {
+  filter: blur(5px);
+}
+
+.I4:hover::after {
+  opacity: 1;
+}
+
+.I5 {
+  position: relative;
+  overflow: hidden;
+}
+
+.I5::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f0f0f0, #ffffff);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I5::after {
+  content: 'Mediterranean';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I5:hover::before {
+  filter: blur(5px);
+}
+
+.I5:hover::after {
+  opacity: 1;
+}
+
+.I6 {
+  position: relative;
+  overflow: hidden;
+}
+
+.I6::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f0f0f0, #ffffff);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I6::after {
+  content: 'Tropical Rainforest';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I6:hover::before {
+  filter: blur(5px);
+}
+
+.I6:hover::after {
+  opacity: 1;
+}
+
+.I7 {
+  position: relative;
+  overflow: hidden;
+}
+
+.I7::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f0f0f0, #ffffff);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I7::after {
+  content: 'Item7 Details';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I7:hover::before {
+  filter: blur(5px);
+}
+
+.I7:hover::after {
+  opacity: 1;
+}
+
+.I8 {
+  position: relative;
+  overflow: hidden;
+}
+
+.I8::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f0f0f0, #ffffff);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I8::after {
+  content: 'Savannah';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I8:hover::before {
+  filter: blur(5px);
+}
+
+.I8:hover::after {
+  opacity: 1;
+}
+
+.I9 {
+  position: relative;
+  overflow: hidden;
+}
+
+.I9::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f0f0f0, #ffffff);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I9::after {
+  content: 'Monsoon';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I9:hover::before {
+  filter: blur(5px);
+}
+
+.I9:hover::after {
+  opacity: 1;
+}
+
+.I10 {
+  position: relative;
+  overflow: hidden;
+}
+
+.I10::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, #f0f0f0, #ffffff);
+  z-index: 1;
+  transition: filter 0.3s ease;
+}
+
+.I10::after {
+  content: 'Creators message';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 16px;
+  text-shadow: 0 0 5px black;
+  z-index: 3;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.I10:hover::before {
+  filter: blur(5px);
+}
+
+.I10:hover::after {
+  opacity: 1;
+}
